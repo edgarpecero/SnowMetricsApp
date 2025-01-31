@@ -1,0 +1,104 @@
+
+#snow-main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 30px 30px 30px;
+}
+
+.card-div-mediaq{
+  flex: 0.5;
+}
+
+.flexCol {
+  /* flex: 0.2; */
+  padding: 0px;
+}
+
+.doubleWidth {
+  flex: 2;
+  min-width: 0;
+  /* Prevent overflow */
+}
+
+.snow-heading {
+  color: #ff6600;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.percentage {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0px;
+  margin-left: 0;
+}
+
+.number {
+  margin: 0;
+  font-size: 20px;
+}
+
+.bgImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  z-index: 1;
+}
+
+.snow-center-heading {
+  color: #ff6600;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 28px;
+}
+
+.largeHeight {
+  min-height: 103px;
+}
+
+.smallHeight {
+  min-height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .flexCol {
+    flex: 100%;
+  }
+
+  .doubleWidth {
+    flex: 100%;
+    margin-left: 10px;
+  }
+
+  .snow-container {
+    margin-left: -8px;
+  }
+
+  .largeHeight {
+    min-height: 100px;
+  }
+
+  .smallHeight {
+    min-height: 50px;
+  }
+
+  /* .ticket-group,
+  .flexCol,
+  .doubleWidth {
+    flex: 1 1 100%;
+    min-width: 100%;
+  } */
+
+  .card-div-mediaq{
+    flex: 1 1 100%;
+  }
+}

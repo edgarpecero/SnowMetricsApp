@@ -1,0 +1,87 @@
+.summary-cards-container {
+  display: flex;
+  gap: 31px;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+
+.ticket-card-bg-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ticket-card {
+  position: relative;
+  width: 235px;
+  height: 165px;
+  display: flex;
+  flex: 1 1 235px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0px 4px 4px 0px #0000000F;
+  border-radius: 12px;
+}
+
+.data-container {
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Specific classes extending the base class */
+.title,
+.percentage {
+  font-size: 16px;
+  line-height: 19.5px;
+  text-align: center;
+}
+
+.number {
+  height: 53px;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+}
+
+.percentage-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.days-card-word {
+  font-size: 16px;
+}
+
+.title,
+.number,
+.percentage {
+  /* font-family: Montserrat; */
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .summary-cards-container {
+    flex-wrap: wrap;
+  }
+
+  .ticket-card {
+    flex: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ticket-card {
+    flex: 1 1 100%;
+  }
+}
